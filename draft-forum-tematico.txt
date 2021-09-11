@@ -1,0 +1,57 @@
+Objetivo:  
+• controlar  todos  os  sócios/membros  do  clube,  tendo  uma  ficha  completa 
+destes  e  dos  dependentes  autorizados  a  frequentar  o  clube
+
+Restrições: 
+• sendo  que  no  nosso  regulamento 
+limitamos  o  acesso  a  apenas  5  dependentes  por  sócio  titular.
+• aulas  de  natação,  em  função  do  tamanho  da  piscina, 
+limitamos a 8 alunos por aula.
+•  aulas de tênis têm o limite de 2 alunos por aula.
+• pagamento: aceitamos somente pagamento aqui no clube, e não via banco.
+• pagamento: apenas  alguns  funcionários 
+cadastrados por mim devem ter acesso a estas funcionalidades relacionadas ao pagamento 
+• gostaríamos de não ter custos adicionais no desenvolvimento para 
+isso queremos usar tecnologia open-source
+
+Requisitos:
+• queremos ter controle sobre os alunos que estão matriculados em cada aula. 
+• Gostaria que o  sistema  controlasse  as  matrículas  nas  aulas  e  que  a  interface  do  sistema  tivesse o  formato  da 
+grade de horário atual, como se fosse um calendário ou agenda, sabe?
+• Gostaríamos que o sistema automatizasse este processo de produção 
+dos  boletos  e  controle  dos  pagamentos. 
+
+
+Fluxograma BPMN (AS IS)
+
+INICIO → CADASTRO NOVO MEMBRO 
+→ INFORMAR DADOS PESSOAIS
+→ TEM DEPENTENDES? 
+→ SIM → INFORMAR DADOS DOS DEPENDENTES (NO MÁXIMO 5) → FIM DO CADASTRO
+→ NÃO → FIM DO CADASTRO
+
+Regras de negócio
+1. Sócio titular deve ter no máximo 5 dependentes.
+2. Aulas de natação devem ter no máximo 8 alunos.
+3. Aulas de tênis devem ter no máximo 2 alunos por aula.
+4. Pagamentos devem ocorrer no clube.
+
+
+Funcionais
+1. O sistema deve gerar boletos automaticamente
+2. O sistema deve gerar uma interface que mostre a relação de todos os alunos
+3. O sistema deve permitir a inserção dos dados dos novos alunos
+4. O sistema deve permitir a edição dos dados dos alunos
+5. O sistema deve permitir a exclusão dos dados dos alunos
+6. O sistema deve permitir a inserção de novas aulas
+7. O sistema deve permtir a edição de das aulas
+8. O sistema deve permitir a exclusão de aulas
+9. O sistema deve permitir o cadastro de alunos nas aulas
+10. O sistema deve permitir a inserção dos dados de novos membros
+
+Não funcionais 
+1. O sistema deve restringir apenas funcionários cadastrados pelo 
+administrador a terem acesso à funcionalidades relacionadas ao pagamento 
+2. A  interface  do  sistema  deve ter o  formato  da 
+grade de horário atual, como se fosse um calendário ou agenda
+3. A tecnologia utilizada deve ser open source
